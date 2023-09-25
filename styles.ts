@@ -1,4 +1,3 @@
-// styles.ts
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
@@ -20,6 +19,7 @@ export default StyleSheet.create({
     shadowOpacity: 0.3,
     shadowRadius: 2,
     elevation: 5,
+    alignItems: 'center',
   },
   title: {
     fontSize: 24,
@@ -32,14 +32,19 @@ export default StyleSheet.create({
     marginBottom: 10,
     color: '#555',
   },
+  boardContainer: {
+    width: '100%',
+    alignItems: 'center',
+  },
   board: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    width: 300,
+    width: '100%',
+    justifyContent: 'center',
   },
   cell: {
-    width: 100,
-    height: 100,
+    width: '25%',
+    aspectRatio: 1,
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
@@ -59,6 +64,9 @@ export default StyleSheet.create({
   clearButtonText: {
     fontSize: 18,
     color: '#fff',
-    textAlign: 'center', // Center the text horizontally
+    textAlign: 'center',
+  },
+  winningCell: {
+    backgroundColor: 'green',
   },
 });

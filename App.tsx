@@ -1,9 +1,12 @@
-// App.tsx
 import React from 'react';
+import {View} from 'react-native';
 import TicTacToeGame from './TicTacToeGame';
+import styles from './styles';
 
-const App: React.FC = () => {
-  return <TicTacToeGame />;
-};
-
-export default App;
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <TicTacToeGame />
+    </View>
+  );
+}
